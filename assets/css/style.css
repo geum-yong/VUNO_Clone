@@ -1,1 +1,60 @@
 @charset 'utf-8';
+
+html {
+  font-size: 16px;
+  font-family: 'Montserrat', 'Raleway', 'Noto Sans', sans-serif;
+}
+
+/* 숨긴 콘텐츠 */
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+
+/* 헤더 */
+.header {
+  background-color: #131c26;
+  opacity: 0.8;
+}
+.header-inner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1070px;
+  height: 65px;
+}
+.header-heading {
+  width: 101px;
+}
+.logo-img {
+  width: 100%;
+}
+.main-menu {
+  height: 100%;
+}
+.menu-list {
+  display: flex;
+  height: 100%;
+}
+.menu-item a {
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  height: 100%;
+  font-size: 0.8rem;
+  font-family: 'Raleway', 'Noto Sans', sans-serif;
+  letter-spacing: 1px;
+  color: #adadad;
+}
+.menu-item a:hover,
+.menu-item a:focus {
+  color: #fff;
+}
