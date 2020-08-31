@@ -28,6 +28,7 @@ html {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding-left: 15px;
   width: 1070px;
   height: 65px;
 }
@@ -36,6 +37,27 @@ html {
 }
 .logo-img {
   width: 100%;
+}
+.mobile-menu-btn {
+  display: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+.mobile-menu-btn:hover,
+.mobile-menu-btn:focus {
+  background-color: #ddd;
+}
+.menu-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: 22px;
+  height: 18px;
+}
+.menu-bar {
+  height: 3px;
+  border-radius: 5px;
+  background-color: #888;
 }
 .main-menu {
   height: 100%;
@@ -57,4 +79,20 @@ html {
 .menu-item a:hover,
 .menu-item a:focus {
   color: #fff;
+}
+@media (max-width: 1070px) {
+  .header-inner {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .header-inner {
+    padding-right: 15px;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+  .main-menu {
+    display: none;
+  }
 }
