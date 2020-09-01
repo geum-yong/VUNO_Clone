@@ -29,7 +29,7 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #000;
-  z-index: 2;
+  z-index: 3;
 }
 .skip-nav-item a {
   position: absolute;
@@ -46,8 +46,12 @@ html {
 
 /* 헤더 */
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #131c26;
   opacity: 0.8;
+  z-index: 2;
 }
 .header-inner {
   display: flex;
@@ -107,12 +111,56 @@ html {
 .menu-item a:focus {
   color: #fff;
 }
+
+/* 배너 */
+.banner {
+  position: relative;
+  height: 1200px;
+}
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.banner-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+.banner-heading {
+  margin-bottom: 50px;
+  width: 670px;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.banner-descripttion {
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: 'Raleway', 'Noto Sans', sans-serif;
+  letter-spacing: 2px;
+}
+
 @media (max-width: 1070px) {
   .header-inner {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
+  /* 헤더 */
   .header-inner {
     padding-right: 15px;
   }
@@ -121,5 +169,17 @@ html {
   }
   .main-menu {
     display: none;
+  }
+
+  /* 베너 */
+  .banner {
+    height: 670px;
+  }
+  .banner-heading {
+    width: 320px;
+    font-size: 1.8rem;
+  }
+  .banner-descripttion {
+    font-size: 0.8rem;
   }
 }
