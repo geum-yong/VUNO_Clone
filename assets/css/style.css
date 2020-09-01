@@ -17,6 +17,33 @@ html {
   clip: rect(0, 0, 0, 0);
 }
 
+/* 스킵 네비게이션 */
+.skip-nav {
+  width: 100%;
+}
+.skip-nav-item {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  z-index: 2;
+}
+.skip-nav-item a {
+  position: absolute;
+  transform: translateY(-130%);
+  margin: 10px 0;
+  padding: 10px 0;
+  color: #fff;
+}
+.skip-nav-item a:active,
+.skip-nav-item a:focus {
+  position: static;
+  transform: none;
+}
+
 /* 헤더 */
 .header {
   background-color: #131c26;
