@@ -60,7 +60,7 @@ html {
   align-items: center;
   margin: 0 auto;
   padding-left: 15px;
-  width: 1070px;
+  max-width: 1070px;
   height: 65px;
 }
 .header-heading {
@@ -154,11 +154,65 @@ html {
   letter-spacing: 2px;
 }
 
-@media (max-width: 1070px) {
-  .header-inner {
-    width: 100%;
-  }
+/* 어비웃 뷰노 */
+.about-vuno {
+  padding: 200px 15px;
+  background-color: #131c26;
+  color: #fff;
 }
+.about-vuno-inner {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+.about-vuno-heading {
+  position: relative;
+  padding: 70px 0;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.about-vuno-heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+}
+.about-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.about-item {
+  margin-right: 10px;
+  padding-top: 110px;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+}
+.about-item:last-child {
+  margin-right: 0;
+}
+.analysis {
+  background-image: url(../img/AboutVUNO_1.png);
+}
+.algorithm {
+  background-image: url(../img/AboutVUNO_2.png);
+}
+.shoftwares {
+  background-image: url(../img/AboutVUNO_3.png);
+}
+.list-title {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.list-description {
+  max-width: 320px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media (max-width: 767px) {
   /* 헤더 */
   .header-inner {
@@ -181,5 +235,18 @@ html {
   }
   .banner-descripttion {
     font-size: 0.8rem;
+  }
+
+  /* 어바웃 뷰노 */
+  .about-list {
+    flex-flow: row wrap;
+  }
+  .about-item {
+    margin-right: 0;
+    margin-bottom: 70px;
+    width: 100%;
+  }
+  .about-item:last-child {
+    margin-bottom: 0;
   }
 }
