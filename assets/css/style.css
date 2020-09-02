@@ -213,6 +213,66 @@ html {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* 솔루션 */
+.solution {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: #131c26;
+}
+.solution-text {
+  flex: 1;
+  position: relative;
+  color: #fff;
+}
+.solution-text-inner {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 500px;
+}
+.solution-heading {
+  padding: 40px 0;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+.solution-heading span:first-child {
+  font-weight: 700;
+}
+.solution-heading span:last-child {
+  font-size: 50%;
+  vertical-align: top;
+}
+.solution-sub-heading {
+  position: absolute;
+  top: 0;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.solution-description {
+  margin-bottom: 90px;
+  font-size: 0.9em;
+  font-family: 'Raleway', 'Noto Sans', sans-serif;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.3);
+}
+.solution-more-btn {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+.solution-more-btn:hover {
+  text-decoration: underline;
+}
+.solution-img {
+  flex: 1;
+  background-image: url(../img/solutions-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 50%;
+  height: 830px;
+}
+
 @media (max-width: 767px) {
   /* 헤더 */
   .header-inner {
@@ -248,5 +308,31 @@ html {
   }
   .about-item:last-child {
     margin-bottom: 0;
+  }
+
+  /* 솔루션 */
+  .solution-text {
+    min-width: 100%;
+    order: 2;
+  }
+  .solution-text-inner {
+    padding: 0 40px;
+    max-width: 100%;
+  }
+  .solution-heading {
+    font-size: 1.4rem;
+  }
+  .solution-description {
+    margin-bottom: 25px;
+  }
+  .btn-area {
+    text-align: right;
+  }
+  .solution-img {
+    margin-bottom: 65px;
+    min-width: 100%;
+    height: 315px;
+    background-position: 0 0;
+    order: 1;
   }
 }
