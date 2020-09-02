@@ -160,17 +160,20 @@ html {
   background-color: #131c26;
   color: #fff;
 }
-.about-vuno-inner {
+.about-vuno-inner,
+.latest-news-inner {
   margin: 0 auto;
   max-width: 1100px;
 }
-.about-vuno-heading {
+.about-vuno-heading,
+.latest-news-heading {
   position: relative;
   padding: 70px 0;
   font-size: 2.5rem;
   font-weight: 400;
 }
-.about-vuno-heading::before {
+.about-vuno-heading::before,
+.latest-news-heading::before {
   content: '';
   position: absolute;
   top: 0;
@@ -271,6 +274,62 @@ html {
   background-size: cover;
   background-position: 0 50%;
   height: 830px;
+}
+
+/* 라티스트 뉴스 */
+.latest-news {
+  padding: 200px 15px;
+  background-color: #131c26;
+  color: #fff;
+}
+.news-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.news-item {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-right: 30px;
+  max-width: 366.66px;
+  font-family: 'Raleway', 'Noto Sans', sans-serif;
+}
+.news-item:last-child {
+  padding-right: 0;
+}
+.news-item-heading {
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.news-date {
+  padding: 15px 0;
+  font-size: 0.91rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.news-item-description {
+  font-size: 0.91rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+}
+.news-img {
+  margin-bottom: 20px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  order: -1;
+}
+.first-news {
+  background-image: url(../img/news-img-1.png);
+}
+.second-news {
+  background-image: url(../img/news-img-2.jpg);
+}
+.third-news {
+  background-image: url(../img/news-img-3.jpg);
 }
 
 @media (max-width: 767px) {
