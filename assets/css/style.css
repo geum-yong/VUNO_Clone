@@ -163,7 +163,8 @@ html {
 .about-vuno-inner,
 .latest-news-inner,
 .hire-inner,
-.contact-inner {
+.contact-inner,
+.footer-inner {
   margin: 0 auto;
   max-width: 1100px;
 }
@@ -266,7 +267,8 @@ html {
   font-size: 0.75rem;
   letter-spacing: 2px;
 }
-.solution-more-btn:hover {
+.solution-more-btn:hover,
+.solution-more-btn:focus {
   text-decoration: underline;
 }
 .solution-img {
@@ -340,7 +342,7 @@ html {
 .hire-heading {
   margin-bottom: 50px;
   font-size: 2.5rem;
-  font-weight: 40;
+  font-weight: 400;
 }
 .hire-more-btn {
   display: inline-block;
@@ -349,7 +351,8 @@ html {
   letter-spacing: 2px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.hire-more-btn:hover {
+.hire-more-btn:hover,
+.hire-more-btn:focus {
   background-color: #fff;
   color: #337ab7;
 }
@@ -410,6 +413,73 @@ html {
   letter-spacing: 1px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.3);
+}
+
+/* footer */
+.footer {
+  padding: 90px 30px 40px;
+  background-color: #101821;
+}
+.guide-list {
+  display: flex;
+  flex-flow: row wrap;
+  color: #fff;
+}
+.guide-item {
+  flex: 1;
+  padding-right: 10px;
+}
+.guide-item:last-child {
+  padding-right: 0;
+}
+.guide-title {
+  margin-bottom: 22px;
+  font-size: 0.8125rem;
+}
+.guide-sub-item {
+  margin-bottom: 28px;
+  font-size: 0.75rem;
+}
+.guide-item a {
+  border-bottom: 1px solid #6d6d6d;
+  color: #6d6d6d;
+}
+.guide-item a:hover,
+.guide-item a:focus {
+  text-decoration: underline;
+}
+.guide-description {
+  font-size: 0.75rem;
+  color: #6d6d6d;
+}
+.description-visit {
+  margin-top: -8px;
+  max-width: 150px;
+  line-height: 2.5;
+}
+.subscribe-form {
+  margin-top: 20px;
+  font-size: 0.75rem;
+}
+.email-input {
+  margin-bottom: 8px;
+  padding: 15px 8px;
+  width: 100%;
+  background-color: #0d131b;
+  color: #fff;
+}
+.submit-btn {
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  background-color: #18232e;
+}
+.copyright-text {
+  display: block;
+  margin-top: 95px;
+  font-size: 0.83rem;
+  text-align: center;
+  color: #737373;
 }
 
 @media (max-width: 991px) {
@@ -511,5 +581,22 @@ html {
   .contact-title::before {
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  /* footer */
+  .guide-item {
+    flex: auto;
+    margin-bottom: 70px;
+    width: 50%;
+  }
+  .guide-item:nth-child(2n) {
+    padding-right: 0;
+  }
+  .guide-item:last-child {
+    margin-bottom: 0;
+  }
+  .description-visit {
+    margin-top: -4px;
+    line-height: 1.5;
   }
 }

@@ -297,6 +297,7 @@
           </div>
         </section>
         <section class="contact">
+          <h2 id="contact" class="a11y-hidden">contact</h2>
           <div class="contact-inner">
             <dl class="contact-list">
               <div class="contact-item item-phone">
@@ -314,13 +315,79 @@
               <div class="contact-item item-email">
                 <dt class="contact-title title-email">E-MAIL</dt>
                 <dd class="contact-description">
-                  <a href="mailto:#">hello@vuno.co</a>
+                  <a href="mailto:#" aria-labelledby="contact">hello@vuno.co</a>
                 </dd>
               </div>
             </dl>
           </div>
         </section>
       </main>
+      <footer class="footer">
+        <div class="footer-inner">
+          <ul class="guide-list">
+            <li class="guide-item">
+              <p class="guide-title">CONTACT</p>
+              <ul class="guide-sub-list">
+                <li class="guide-sub-item">
+                  Tel <a href="tel:#">+82.2.515.6646</a>
+                </li>
+                <li class="guide-sub-item">
+                  Fax <a href="tel:#">+82.2.515.6647</a>
+                </li>
+                <li class="guide-sub-item">
+                  Email <a href="mailto:#">hello@vuno.co</a>
+                </li>
+              </ul>
+            </li>
+            <li class="guide-item">
+              <p class="guide-title">VISIT</p>
+              <p class="guide-description description-visit">
+                6F, 507, Gangnam-daero Seocho-gu, seoul, Korea
+              </p>
+            </li>
+            <li class="guide-item">
+              <p class="guide-title">VUNO</p>
+              <ul class="guide-sub-list">
+                <li class="guide-sub-item">
+                  <a href="#">Company Profile</a>
+                </li>
+                <li class="guide-sub-item">
+                  <a href="#">White Paper</a>
+                </li>
+                <li class="guide-sub-item">
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </li>
+            <li class="guide-item">
+              <p class="guide-title">VISIT</p>
+              <a href="#" class="guide-description">Join the VUNO team</a>
+            </li>
+            <li class="guide-item">
+              <p class="guide-title">SUBSCRIBE</p>
+              <p class="guide-description">Get the latest and greatest</p>
+              <form action="#" method="post" class="subscribe-form">
+                <fieldset>
+                  <legend class="a11y-hidden">subscribeForm</legend>
+                  <label for="email" class="a11y-hidden">이메일</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="email-input"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <button type="submit" class="submit-btn">Subscribe</button>
+                </fieldset>
+              </form>
+            </li>
+          </ul>
+          <small class="copyright-text">
+            &copy; VUNO lnc. All rights reserved
+          </small>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
