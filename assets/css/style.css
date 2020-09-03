@@ -162,7 +162,8 @@ html {
 }
 .about-vuno-inner,
 .latest-news-inner,
-.hire-inner {
+.hire-inner,
+.contact-inner {
   margin: 0 auto;
   max-width: 1100px;
 }
@@ -353,6 +354,64 @@ html {
   color: #337ab7;
 }
 
+/* contact */
+.contact {
+  padding: 0 15px 140px;
+  background-color: #131c26;
+  color: #fff;
+}
+.contact-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.contact-item {
+  font-family: 'Raleway', 'Noto Sans', sans-serif;
+}
+.item-phone {
+  max-width: 107.52px;
+  width: 30%;
+}
+.item-address {
+  max-width: 189.67px;
+  width: 30%;
+}
+.item-email {
+  max-width: 110.39px;
+  width: 30%;
+}
+.contact-title {
+  position: relative;
+  padding: 80px 0 20px;
+  letter-spacing: 3px;
+}
+.contact-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.title-phone::before {
+  background-image: url(../img/Phone.png);
+}
+.title-address::before {
+  background-image: url(../img/Address.png);
+}
+.title-email::before {
+  background-image: url(../img/Mail.png);
+}
+.contact-description {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media (max-width: 991px) {
   /* latest news */
   .news-item {
@@ -440,5 +499,17 @@ html {
   }
   .hire-more-btn {
     padding: 20px 45px;
+  }
+
+  /* contact */
+  .contact-item {
+    max-width: initial;
+    width: 100%;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  .contact-title::before {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
