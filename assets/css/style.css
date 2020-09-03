@@ -17,7 +17,7 @@ html {
   clip: rect(0, 0, 0, 0);
 }
 
-/* 스킵 네비게이션 */
+/* skip nav */
 .skip-nav {
   width: 100%;
 }
@@ -44,7 +44,7 @@ html {
   transform: none;
 }
 
-/* 헤더 */
+/* header */
 .header {
   position: fixed;
   top: 0;
@@ -112,7 +112,7 @@ html {
   color: #fff;
 }
 
-/* 배너 */
+/* banner */
 .banner {
   position: relative;
   height: 1200px;
@@ -154,14 +154,15 @@ html {
   letter-spacing: 2px;
 }
 
-/* 어비웃 뷰노 */
+/* about vuno */
 .about-vuno {
   padding: 200px 15px;
   background-color: #131c26;
   color: #fff;
 }
 .about-vuno-inner,
-.latest-news-inner {
+.latest-news-inner,
+.hire-inner {
   margin: 0 auto;
   max-width: 1100px;
 }
@@ -216,7 +217,7 @@ html {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* 솔루션 */
+/* solution */
 .solution {
   display: flex;
   flex-flow: row wrap;
@@ -276,7 +277,7 @@ html {
   height: 830px;
 }
 
-/* 라티스트 뉴스 */
+/* latest news */
 .latest-news {
   padding: 200px 15px;
   background-color: #131c26;
@@ -284,18 +285,15 @@ html {
 }
 .news-list {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 .news-item {
   display: flex;
   flex-flow: column nowrap;
-  padding-right: 30px;
-  max-width: 366.66px;
+  max-width: 336.66px;
+  width: 30%;
   font-family: 'Raleway', 'Noto Sans', sans-serif;
-}
-.news-item:last-child {
-  padding-right: 0;
 }
 .news-item-heading {
   padding-bottom: 17px;
@@ -332,8 +330,43 @@ html {
   background-image: url(../img/news-img-3.jpg);
 }
 
+/* hire */
+.hire {
+  padding: 0 15px 296px;
+  background-color: #131c26;
+  color: #fff;
+}
+.hire-heading {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: 40;
+}
+.hire-more-btn {
+  display: inline-block;
+  padding: 20px 90px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.hire-more-btn:hover {
+  background-color: #fff;
+  color: #337ab7;
+}
+
+@media (max-width: 991px) {
+  /* latest news */
+  .news-item {
+    max-width: initial;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .news-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 767px) {
-  /* 헤더 */
+  /* header */
   .header-inner {
     padding-right: 15px;
   }
@@ -344,7 +377,7 @@ html {
     display: none;
   }
 
-  /* 베너 */
+  /* banner */
   .banner {
     height: 670px;
   }
@@ -356,7 +389,7 @@ html {
     font-size: 0.8rem;
   }
 
-  /* 어바웃 뷰노 */
+  /* about vuno */
   .about-list {
     flex-flow: row wrap;
   }
@@ -369,7 +402,7 @@ html {
     margin-bottom: 0;
   }
 
-  /* 솔루션 */
+  /* solution */
   .solution-text {
     min-width: 100%;
     order: 2;
@@ -393,5 +426,19 @@ html {
     height: 315px;
     background-position: 0 0;
     order: 1;
+  }
+
+  /* latest news */
+  .latest-news {
+    padding: 200px 15px 100px;
+  }
+
+  /* hire */
+  .hire-heading {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+  }
+  .hire-more-btn {
+    padding: 20px 45px;
   }
 }
